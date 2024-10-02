@@ -53,6 +53,8 @@ app.use((err, req, res, next) => {
 });
 ```
 
+Check out the full example [here](https://github.com/ojhaujjwal/openapi-for-contract-testing/blob/main/express-server/server.js#L38-L58).
+
 You could implement a similiar thing in a PHP API using ThePHPLeague's `openapi-psr7-validator`. Here's an example implementation of a [PSR-15 middleware](https://www.php-fig.org/psr/psr-15/#22-psrhttpservermiddlewareinterface):
 
 ```php
@@ -187,7 +189,7 @@ try {
   console.error(error);
 }
 ```
-You can checkout the full setup on [js-client/axios-interceptor.js](https://github.com/ojhaujjwal/blog-openapi-for-contract-testing/blob/main/js-client/axios-interceptor.js).
+You can checkout the full setup on [js-client/axios-interceptor.js](https://github.com/ojhaujjwal/openapi-for-contract-testing/blob/main/js-client/axios-interceptor.js).
 
 When not using the openapi sdk, this is pretty crucial, specially if the API clients have enough automated tests where tests would fail if the request doesn't match the contract defined in OpenAPI spec and the mocked response are also validated against the OpenAPI spec.
 
