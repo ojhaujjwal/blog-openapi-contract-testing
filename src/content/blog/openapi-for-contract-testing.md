@@ -196,6 +196,7 @@ When not using the openapi sdk, this is pretty crucial, specially if the API cli
 ## Achieving Contract testing with OpenAPI spec
 If you have come this far, I imagine you are doing all of the things:
 - In the API server, you have some form of OpenAPI validation implemented in the server for both the incoming requests and the outgoing response.
+  - You can take it a step further if you have good coverage of your API tests which responds with 500 and fails tests when response doesn't meet the OpenAPI spec. This will enable you to detect the issue in CI before the API is deployed.
 - In the API clients, you are either using the generated clients or using the openapi validator libraries for both request validation and response mock validation with enough automated test coverage.
 
 This enables you to release your clients and backend to deploy seperately without running a full range of E2E tests which are much slower and unpredictable (flaky) in nature. 
