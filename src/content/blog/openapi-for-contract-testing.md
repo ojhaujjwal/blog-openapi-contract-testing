@@ -6,8 +6,7 @@ slug: openapi-for-contract-testing
 featured: true
 draft: false
 description:
-  Some rules & recommendations for creating or adding new posts using AstroPaper
-  theme.
+  Using OpenAPI to its full capability can help you with achieving contract testing and help improve reliability of your deployments.
 ---
 
 OpenAPI, former known as Swagger, is a specification, usually expressed in JSON and YML, that describes how your API looks and behaves like. 
